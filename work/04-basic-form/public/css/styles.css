@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;  
+}
+
+html, body{
+    font-family: sans-serif;
+
+    height: 100%;
+    width: 100%;
+
+    margin: 0;
+}
+
+#root{
+    display:grid;
+
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+
+    grid-template-rows: auto 1fr auto;
+
+    background-color:lightgrey;
+}
+
+header{
+    grid-area: header;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.header__logo{
+    border-right: 1px solid black;
+}
+
+.header__title{
+    align-self: center;
+    
+    padding: 1rem;
+}
+
+main{
+    grid-area: main;
+    background-color: beige;
+}
+
+.main__form{
+    display: flex;
+    flex-direction: column;
+
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+    border-radius: 1rem;
+
+    background-color: ghostwhite;
+}
+
+.form__lbl{
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 1rem;
+
+    font-size: 1rem;
+}
+
+.form__lbl input{
+    display:block;
+
+    height: 1rem;
+    width: 100%;
+}
+
+.form__lbl span{
+    font-weight: bold;
+}
+
+.form__lbl select{
+    display: block;
+
+    width: 100%;
+}
+
+.form__btn{
+    width: 80%;
+
+    align-self: center;
+
+    padding: 0.5rem;
+
+    border-radius: 0.5rem;
+}
+
+.form__btn:hover{
+    background-color: lightgrey;
+    color:ghostwhite;
+
+    font-weight: bold;
+}
+
+footer{
+    grid-area: footer;
+
+    font-size: 0.8rem;
+    text-align: center;
+    
+    padding: 0.2em;
+}
+
+@media (min-width: 50rem) {
+    header{
+        display: grid;
+        grid-template-columns: repeat(9,1fr);
+    }
+
+    .header__logo{
+        grid-column: span 2;
+    }
+
+    .header__title{
+        grid-column: span 7;
+        justify-self: center;
+    }
+
+    .main__form{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    .form__lbl{
+        grid-column: span 3;
+    }
+
+    .form__lbl input{
+        display: inline-block;
+        width: 50%;
+    }
+
+    .form__lbl select{
+        display: inline-block;
+        width: 50%;
+    }
+
+    .form__btn{
+        grid-column: span 6;
+
+        width: 25%;
+
+        justify-self: center;
+    }
+}

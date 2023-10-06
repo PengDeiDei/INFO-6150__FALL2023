@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/styles.css">
+        <title> 04-basic-form</title>
+    </head>
+    <body>
+        <div id="root">
+            <header>
+                <img 
+                    class="header__logo"
+                    src="http://placekitten.com/200/282"
+                    alt="cat logo"
+                >
+                <h1 class="header__title"> Register For More Cats</h1>
+            </header>
+            <main>
+                <form class="main__form" action="/submit" method="POST">
+                    <label class="form__lbl">
+                        <span> Username:</span>
+                        <input name="name" type="text" placeholder="John123" required/>
+                    </label>
+                    <label class="form__lbl">
+                        <span> Email:</span>
+                        <input name="email" type="email" placeholder="John@Smith.com" required/>
+                    </label>
+                    <label class="form__lbl">
+                        <span>Tire:</span>
+                        <select name="tier">
+                            <option> Please Select</option>
+                            <option value="1"> Silver Tier</option>
+                            <option value="2"> Gold Tier</option> 
+                            <option value="3"> Platinum Tier</option>
+                        </select>
+                    </label>
+                    <label class="form__lbl">
+                        <span> Do you want us to send you annoying emails?</span>
+                        <input name="annoy_me" type="checkbox" checked>
+                    </label>
+                    <button class="form__btn" type="submit"> Register</button>
+                </form>
+            </main>
+            <footer>
+                We really don't care about your privacy, see our <a href="privacy.html">Privacy Policy</a>
+            </footer>
+        </div>
+    </body>
+</html>
