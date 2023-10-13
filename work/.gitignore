@@ -1,6 +1,0 @@
-node_modules/
-.DS_Store
-01-setup-test/package-lock.json
-02-basic-layout/package-lock.json
-03-responsive-grid/package-lock.json
-04-basic-form/package-lock.json

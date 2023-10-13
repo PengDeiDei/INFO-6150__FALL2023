@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/register.css">
+        <title> project1-register</title>    
+    </head>
+    <body>
+        <div id="root">
+            <header>
+                <a href="index.html">
+                    <img
+                        class="header__logo"
+                        src="images/cat6.jpg"
+                        alt="a cat pic for logo in header"
+                    >
+                </a>
+                <h1 class="header__title"> Hi, I'm Derek. Good to see you!</h1>
+            </header>
+            <nav class="menu">
+                <h2 class="menu__title"><b> Register</b></h2>
+                <ul class="menu__list">
+                    <li class="menu__dropdown">
+                        <a href="index.html"> Homepage</a>
+                        <div class="dropdown__content">
+                            <a href="mth2.html"> 2 Months</a>
+                            <a href="mth6.html"> 6 Months</a>
+                            <a href="mth10.html"> 10 Months</a>
+                        </div>
+                    </li>
+                    <li class="menu__dropdown">    
+                        <a href="register.html"> Register Here</a>
+                        <div class="dropdown__content">
+                            <a href="signUp.html"> Sign-up</a>
+                            <a href="profile.html"> My Profile</a>
+                        </div>
+                    </li>
+                    <li class="menu__item"><a href="about.html"> About me</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h3 class="main__title"> Register For More About Me!</h2>
+                <form class="main__form" action="/register" method="POST">
+                    <label class="form__note">
+                        <span>* indicate required fields.</span>
+                    </label>
+                    <label class="form__lbl">
+                        <span> Username*:</span>
+                        <input name="name" type="text" placeholder="John123" required/>
+                    </label>
+                    <label class="form__lbl">
+                        <span> Email*:</span>
+                        <input name="email" type="email" placeholder="John@Smith.com" required/>
+                    </label>
+                    <label class="form__lbl">
+                        <span>Tire:</span>
+                        <select name="tier">
+                            <option> Please Select</option>
+                            <option value="1"> Silver Tier</option>
+                            <option value="2"> Gold Tier</option> 
+                            <option value="3"> Platinum Tier</option>
+                        </select>
+                    </label>
+                    <label class="form__lbl">
+                        <span> Do you want us to send you annoying emails?</span>
+                        <input name="annoy_me" type="checkbox" checked>
+                    </label>
+                    <button class="form__btn" type="submit"> Register</button>
+                </form>
+            </main>
+            <footer>
+                We really don't care about your privacy, see our <a href="privacy.html">Privacy Policy</a>
+            </footer>
+        </div>
+    </body>
+</html>
