@@ -46,7 +46,7 @@ header{
 }
 
 .header__title{
-    align-self: left;
+    align-self: center;
 
     margin: 1rem;
 }
