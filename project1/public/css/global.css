@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;  
+}
+
+html, body{
+    font-family: sans-serif;
+
+    height: 100%;
+    width: 100%;
+
+    margin: 0;
+}
+
+#root{
+    display:grid;
+
+    grid-template-areas: 
+    "header"
+    "global__menu"
+    "main"
+    "footer";
+
+    grid-template-rows: auto auto 1fr auto;
+
+    font-size: 1rem;
+}
+
+header{
+    grid-area: header;
+
+    display: flex;
+    flex-direction: row;
+    
+    padding: 0;
+
+    background-color: lightskyblue;
+}
+
+.header__logo{
+    border-right: 1px solid black;
+
+    max-width: 25rem;
+    max-height: 25rem;
+
+    height: auto;
+}
+
+.header__title{
+    align-self: center;
+
+    margin: 1rem;
+}
+
+.menu{
+    grid-area: global__menu;
+
+    display: flex;
+    flex-direction: column;
+   
+    margin: 0;
+
+    background-color: beige;
+}
+
+.menu__title{
+    padding: 0.1rem 1rem;
+    border-bottom: 2px solid black;
+}
+
+.menu__list{
+    padding: 0 0.5rem;
+    list-style-type: none;
+}
+
+.menu__dropdown a,.menu__item a{
+    color: black;
+
+    text-decoration: none;
+}
+
+.dropdown__content{
+    display: none;
+
+    position: absolute;
+
+    background-color: lightgray;
+
+    min-width: 10rem;
+
+    box-shadow: 0 1rem 2rem 0 rgba(240, 240, 240, 0.2);
+}
+
+.dropdown__content a{
+    display: block;
+
+    text-align: left;
+}
+
+.menu__dropdown a:hover, .menu__item a:hover{
+    background-color: lightgray;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.dropdown__content a:hover{
+    background-color: ghostwhite;
+    color: black;
+}
+
+.menu__dropdown:hover .dropdown__content{
+    display: block;
+}
+
+footer{
+    grid-area: footer;
+
+    font-size: 1rem;
+    text-align: center;
+    
+    padding: 0.2em;
+
+    background-color: beige;
+}
+
+@media(min-width: 50rem){
+    header{
+        display: grid;
+        grid-template-columns: repeat(9,1fr);
+    }
+
+    .header__logo{
+        grid-column: span 2;
+    }
+
+    .header__title{
+        grid-column: span 7;
+        justify-self: center;
+    }
+
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+    }
+    
+    .menu__title{
+        grid-column: span 1;
+        justify-self: center;
+        border-bottom: 0;
+    }
+
+    .menu__list{
+        grid-column: span 7;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        align-items: center;
+    }
+}

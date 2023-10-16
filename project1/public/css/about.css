@@ -1,0 +1,7 @@
+.main{
+    grid-area: main;
+}
+
+.main__text{
+    margin: 1em;
+}
