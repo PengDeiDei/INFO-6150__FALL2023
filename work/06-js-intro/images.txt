@@ -1,0 +1,6 @@
+public/images/cat1.jpg
+public/images/cat2.jpg
+public/images/cat3.jpg
+public/images/cat4.jpg
+
+All images listed above in this project are owned by myself, and credited to my cat Derek.
