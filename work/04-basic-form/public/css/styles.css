@@ -43,12 +43,7 @@ header{
 
 main{
     grid-area: main;
-
-    padding: 0;
-}
-
-.main__title{
-    padding: 0 1em;
+    background-color: beige;
 }
 
 .main__form{
@@ -63,12 +58,14 @@ main{
     background-color: ghostwhite;
 }
 
-.form__note, .form__lbl{
+.form__lbl{
     display: inline-block;
 
     width: 100%;
 
     padding: 1rem;
+
+    font-size: 1rem;
 }
 
 .form__lbl input{
@@ -78,7 +75,7 @@ main{
     width: 100%;
 }
 
-span{
+.form__lbl span{
     font-weight: bold;
 }
 
@@ -134,32 +131,18 @@ footer{
         grid-template-columns: repeat(6,1fr);
     }
 
-    .form__note{
-        grid-column: span 6;
-    }
-
     .form__lbl{
         grid-column: span 3;
     }
 
     .form__lbl input{
         display: inline-block;
-
         width: 50%;
     }
 
     .form__lbl select{
         display: inline-block;
-
         width: 50%;
-    }
-
-    .form__btn{
-        grid-column: span 6;
-
-        width: 25%;
-
-        justify-self: center;
     }
 
     .form__btn{
