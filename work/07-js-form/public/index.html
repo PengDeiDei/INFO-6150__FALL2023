@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/register.css">
+        <script defer src="js/register.js"></script>
+        <title> 07-js-form</title>    
+    </head>
+    <body>
+        <div id="root">
+            <header>
+                <a href="index.html">
+                    <img
+                        class="header__logo"
+                        src="images/cat1.jpg"
+                        alt="a Derek pic for logo in header"
+                    >
+                </a>
+                <h1 class="header__title"> Hi, I'm Derek. Good to see you!</h1>
+            </header>
+            <nav class="menu">
+                <h2 class="menu__title"><b> Register</b></h2>
+                <div class="menu__dropdown">
+                    <button class="dropdown__btn">Menu</button>
+                    <ul class="dropdown__content">
+                        <li class="dropdown__item"><a href="home.html"> Homepage</a></li>
+                        <li class="dropdown__item"><a href="about.html"> About Me</a></li>    
+                        <li class="dropdown__item"><a href="index.html"> Register Here</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <main>
+                <h3 class="main__title"> Register For More About Me!</h2>
+                    <form class="main__form" action="/register" method="POST">
+                        <label class="form__note">
+                            <span>* indicate required fields.</span>
+                        </label>
+                        <label class="form__lbl form-name">
+                            <span> Username*:</span>
+                            <input name="name" type="text" class="form__name" placeholder="Please enter your username"/>
+                            <span class="name__error"> This field is required to fill</span>
+                        </label>
+                        <label class="form__lbl form-email">
+                            <span> Email*:</span>
+                            <input name="email" type="text" class="form__email" placeholder="Please enter your email"/>
+                            <span class="email__error"></span>
+                        </label>
+                        <label class="form__lbl form-confirm">
+                            <span> Confirm Email*:</span>
+                            <input name="confirm" type="text" class="form__confirm" placeholder="Please enter your email again"/>
+                            <span class="confirm__error"></span>
+                        </label>
+                        <label class="form__lbl form-tier">
+                            <span>Tire:</span>
+                            <select name="tier" class="form__tier">
+                                <option value="0"> Please Select</option>
+                                <option value="1"> Silver Tier</option>
+                                <option value="2"> Gold Tier</option> 
+                                <option value="3"> Platinum Tier</option>
+                            </select>
+                            <span class="tier__error"></span>
+                        </label>
+                        <label class="form__lbl form-spam">
+                            <span> Do you want us to send you annoying emails?</span>
+                            <input name="annoy_me" type="checkbox" checked>
+                        </label>
+                        <button class="form__btn" type="submit"> Register</button>
+            </main>
+            <footer>
+                We really don't care about your privacy, see our <a href="privacy.html">Privacy Policy</a>
+            </footer>
+        </div>
+    </body>
+</html>

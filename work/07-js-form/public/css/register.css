@@ -1,0 +1,129 @@
+main{
+    grid-area: main;
+
+    padding: 0;
+
+    font-size: 1rem;
+}
+
+.main__title{
+    padding: 0 1em;
+}
+
+.main__form{
+    display: flex;
+    flex-direction: column;
+
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+    border-radius: 1rem;
+
+    background-color: ghostwhite;
+}
+
+.form__note, .form__lbl{
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 1rem;
+}
+
+.form__lbl input{
+    display:block;
+
+    height: 1rem;
+    width: 100%;
+}
+
+.form-spam input{
+    width: 1rem;
+    height: auto;
+}
+
+span{
+    font-weight: bold;
+}
+
+.name__error, .email__error, .confirm__error, .tier__error{
+    color: red;
+
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+.name__error{
+    display: none;
+}
+
+.form-name--invalid .name__error{
+    display: inline-block;
+}
+
+.form__lbl select{
+    display: block;
+
+    width: 100%;
+}
+
+.form__btn{
+    width: 80%;
+
+    align-self: center;
+
+    padding: 0.5rem;
+
+    border-radius: 0.5rem;
+}
+
+.form__btn:hover{
+    background-color: lightgrey;
+    color:ghostwhite;
+
+    font-weight: bold;
+}
+
+@media (min-width: 40rem) {
+    .main__form{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    .form__note{
+        grid-column: span 6;
+    }
+
+    .form__lbl{
+        grid-column: span 3;
+    }
+
+    .form-spam{
+        grid-column: span 6;
+    }
+    
+    .form__lbl input{
+        display: inline-block;
+
+        width: 55%;
+    }
+
+    .form-spam input{
+        width: 1rem;
+        height: auto;
+    }
+
+    .form__lbl select{
+        display: inline-block;
+
+        width: 55%;
+    }
+
+    .form__btn{
+        grid-column: span 6;
+
+        width: 25%;
+
+        justify-self: center;
+    }
+}
