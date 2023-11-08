@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/icon.css">
         <script defer src="js/global.js"></script>
         <title> project2</title>    
     </head>
     <body>
         <div id="root">
-            <a href="#main" class="skip-to-main-link"> Skip to Content</a>
+            <a href="#main" class="skip-to-main-link" aria-label="click to skip to main content"> Skip to Content</a>
             <header>
                 <a href="index.html">
                     <img 
@@ -20,8 +21,8 @@
                     >
                 </a>
                 <h1 class="header__title"> Cats Power the Internet</h1>
-                <div class="header__dropdown">
-                    <button class="dropdown__btn"> Menu</button>
+                <div class="header__dropdown" aria-label="mobile menu">
+                    <button class="dropdown__btn"> <i class="dropdown__icon gg-menu"></i></button>
                     <ul class="dropdown__content">
                         <li class="dropdown__item"><a href="index.html"> Home</a></li>
                         <li class="dropdown__item"><a href="about.html"> Famous Cats</a></li>
@@ -29,7 +30,7 @@
                     </ul>
                 </div>
             </header>
-            <nav class="menu">
+            <nav class="menu" aria-label="laptop menu">
                 <ul class="menu__content">
                     <li class="menu__item"><a href="index.html"> Home</a></li>
                     <li class="menu__item"><a href="about.html"> Famous Cats</a></li>
@@ -89,7 +90,7 @@
                 </div>
             </main>
             <footer>
-                <ul class="footer__list">
+                <ul class="footer__list" aria-label="footer links">
                     <li class="footer__item"><a href="privacy.html"> Privacy Policy</a></li>
                     <li class="footer__item"><a href="work.html"> Work for Us</a></li>
                     <li class="footer__item"><a href="contact.html"> Contact Us</a></li>
