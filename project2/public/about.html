@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/about.css">
+        <script defer src="js/global.js"></script>
+        <title> project2</title>    
+    </head>
+    <body>
+        <div id="root">
+            <a href="#main" class="skip-to-main-link"> Skip to Content</a>
+            <header>
+                <a href="index.html">
+                    <img 
+                        class="header__logo"
+                        src="http://placekitten.com/200/282"
+                        alt="a cat pic for logo in header"
+                    >
+                </a>
+                <h1 class="header__title"> Cats Power the Internet</h1>
+                <div class="header__dropdown">
+                    <button class="dropdown__btn"> Menu</button>
+                    <ul class="dropdown__content">
+                        <li class="dropdown__item"><a href="index.html"> Home</a></li>
+                        <li class="dropdown__item"><a href="about.html"> Famous Cats</a></li>
+                        <li class="dropdown__item"><a href="events.html"> Cat Events</a></li>
+                    </ul>
+                </div>
+            </header>
+            <nav class="menu">
+                <ul class="menu__content">
+                    <li class="menu__item"><a href="index.html"> Home</a></li>
+                    <li class="menu__item"><a href="about.html"> Famous Cats</a></li>
+                    <li class="menu__item"><a href="events.html"> Cat Events</a></li>
+                </ul>
+            </nav>
+            <main id="main">
+                <div class="card card1">
+                    <h2 class="card__title"> Jorts</h2>
+                    <img 
+                        class="card__img"
+                        src="http://placekitten.com/270/250"
+                        alt="a cat pic for card #1"
+                    >
+                    <div class="card__container">
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quia fuga, delectus perspiciatis impedit 
+                            excepturi similique eum culpa voluptate ratione est.
+                        </p>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link" href="#subscribe">Subscribe</a> elit.</p>  
+                    </div>
+                </div>
+                <div class="card card2">
+                    <h2 class="card__title"> Jean</h2>
+                    <img 
+                        class="card__img"
+                        src="http://placekitten.com/250/272"
+                        alt="a cat pic for card #2"
+                        >
+                    <div class="card__container">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro esse, mollitia delectus 
+                            amet quae autem magnam ex, minima reiciendis quam quidem ea placeat, voluptas rerum inventore 
+                            veniam suscipit deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus 
+                            sit veniam assumenda exercitationem tempore a explicabo ullam, tenetur laborum mollitia et!
+                        </p>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link" href="#">Subscribe</a> elit.</p>
+                    </div>
+                </div>
+                <div class="card card3">
+                    <h2 class="card__title"> Maru</h2>
+                    <img 
+                        class="card__img"
+                        src="http://placekitten.com/300/250"
+                        alt="a cat pic for card #3"
+                    >
+                    <div class="card__container">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis ipsam quis dignissimos 
+                            natus officiis corporis nam velit mollitia? Ex, nulla eveniet blanditiis facere placeat pariatur tempora. 
+                            Non, nobis harum.
+                        </p>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link" href="#">Subscribe</a> elit.</p>
+                    </div>
+                </div>
+                <div class="card card4">
+                    <h2 class="card__title"> Nyancat</h2>
+                    <img 
+                        class="card__img"
+                        src="http://placekitten.com/250/300"
+                        alt="a cat pic for card #4"
+                    >
+                    <div class="card__container">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos rerum voluptas deserunt aliquid 
+                            accusamus rem perferendis asperiores quasi non repudiandae ratione, quisquam mollitia, tenetur atque iusto. 
+                            Vel deleniti non odio.
+                        </p>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link" href="#">Subscribe</a> elit.</p>
+                    </div>
+                </div>
+                <div class="card card5">
+                    <h2 class="card__title"> Grumpy Cat</h2>
+                    <img 
+                        class="card__img"
+                        src="http://placekitten.com/270/282"
+                        alt="a cat pic for card #5"
+                    >
+                    <div class="card__container">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Consequatur natus, cumque ullam reiciendis nulla nihil repudiandae cupiditate magni excepturi fuga iure tempora 
+                            doloremque, facere, dolore placeat! Tempora et cupiditate corporis.
+                        </p>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link" href="#">Subscribe</a> elit.</p>
+                    </div>
+                </div>
+                <div class="card card6">
+                    <h2 class="card__title"> Lil Bud</h2>
+                    <img 
+                        class="card__img"
+                        src="http://placekitten.com/310/300"
+                        alt="a cat pic for card #6"    
+                    >
+                    <div class="card__container">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quia repudiandae tenetur cupiditate porro, dolor 
+                            hic ipsum, praesentium odit placeat ullam!
+                        </p>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link"href="#">Subscribe</a> elit.</p>
+                    </div>
+                </div>
+                <dialog class="main__subscribe" id="subscribe">
+                    <h3 class="subscribe__title"> Subscribe to the Latest Mews!</h3>
+                    <form class="subscribe__form" action="/subscribe" method="POST">
+                        <label class="form__lbl form-email">
+                            <span> Email: *required</span>
+                            <input name="email" type="text" class="form__email" placeholder="Please enter your email"/>
+                            <span class="email__error"></span>
+                        </label>
+                        <label class="form__lbl form-confirm">
+                            <span> Confirm Email*:</span>
+                            <input name="confirm" type="text" class="form__confirm" placeholder="Please enter your email again"/>
+                            <span class="confirm__error"></span>
+                        </label>
+                        <div class="form__btn-groups">
+                            <button class="form__subscribe-btn" type="submit"> Subscribe</button>
+                            <button class="form__cancel-btn"> Cancel</button>
+                        </div>
+                    </form>
+                </dialog>
+            </main>
+            <footer>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="privacy.html"> Privacy Policy</a></li>
+                    <li class="footer__item"><a href="work.html"> Work for Us</a></li>
+                    <li class="footer__item"><a href="contact.html"> Contact Us</a></li>
+                    <li class="footer__item"><a href="social.html"> Social Media</a></li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>
