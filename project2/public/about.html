@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/icon.css">
         <script defer src="js/global.js"></script>
         <title> project2</title>    
     </head>
     <body>
         <div id="root">
-            <a href="#main" class="skip-to-main-link"> Skip to Content</a>
+            <a href="#main" class="skip-to-main-link" aria-label="click to skip to main content"> Skip to Content</a>
             <header>
                 <a href="index.html">
                     <img 
@@ -20,8 +21,8 @@
                     >
                 </a>
                 <h1 class="header__title"> Cats Power the Internet</h1>
-                <div class="header__dropdown">
-                    <button class="dropdown__btn"> Menu</button>
+                <div class="header__dropdown" aria-label="mobile menu">
+                    <button class="dropdown__btn"> <i class="dropdown__icon gg-menu"></i></button>
                     <ul class="dropdown__content">
                         <li class="dropdown__item"><a href="index.html"> Home</a></li>
                         <li class="dropdown__item"><a href="about.html"> Famous Cats</a></li>
@@ -29,7 +30,7 @@
                     </ul>
                 </div>
             </header>
-            <nav class="menu">
+            <nav class="menu" aria-label="laptop menu">
                 <ul class="menu__content">
                     <li class="menu__item"><a href="index.html"> Home</a></li>
                     <li class="menu__item"><a href="about.html"> Famous Cats</a></li>
@@ -49,7 +50,8 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quia fuga, delectus perspiciatis impedit 
                             excepturi similique eum culpa voluptate ratione est.
                         </p>
-                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link" href="#subscribe">Subscribe</a> elit.</p>  
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link" href="#"
+                            aria-label="open to register page">Subscribe</a> elit.</p>  
                     </div>
                 </div>
                 <div class="card card2">
@@ -66,7 +68,8 @@
                             veniam suscipit deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus 
                             sit veniam assumenda exercitationem tempore a explicabo ullam, tenetur laborum mollitia et!
                         </p>
-                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link" href="#">Subscribe</a> elit.</p>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link" href="#"
+                            aria-label="open to register page">Subscribe</a> elit.</p>
                     </div>
                 </div>
                 <div class="card card3">
@@ -82,7 +85,8 @@
                             natus officiis corporis nam velit mollitia? Ex, nulla eveniet blanditiis facere placeat pariatur tempora. 
                             Non, nobis harum.
                         </p>
-                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link" href="#">Subscribe</a> elit.</p>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link" href="#"
+                            aria-label="open to register page">Subscribe</a> elit.</p>
                     </div>
                 </div>
                 <div class="card card4">
@@ -98,7 +102,8 @@
                             accusamus rem perferendis asperiores quasi non repudiandae ratione, quisquam mollitia, tenetur atque iusto. 
                             Vel deleniti non odio.
                         </p>
-                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link" href="#">Subscribe</a> elit.</p>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link" href="#"
+                            aria-label="open to register page">Subscribe</a> elit.</p>
                     </div>
                 </div>
                 <div class="card card5">
@@ -114,7 +119,8 @@
                             Consequatur natus, cumque ullam reiciendis nulla nihil repudiandae cupiditate magni excepturi fuga iure tempora 
                             doloremque, facere, dolore placeat! Tempora et cupiditate corporis.
                         </p>
-                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link" href="#">Subscribe</a> elit.</p>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link" href="#"
+                            aria-label="open to register page">Subscribe</a> elit.</p>
                     </div>
                 </div>
                 <div class="card card6">
@@ -129,12 +135,13 @@
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quia repudiandae tenetur cupiditate porro, dolor 
                             hic ipsum, praesentium odit placeat ullam!
                         </p>
-                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link"href="#">Subscribe</a> elit.</p>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing <a class="subscribe__link"href="#"
+                            aria-label="open to register page">Subscribe</a> elit.</p>
                     </div>
                 </div>
                 <dialog class="main__subscribe" id="subscribe">
                     <h3 class="subscribe__title"> Subscribe to the Latest Mews!</h3>
-                    <form class="subscribe__form" action="/subscribe" method="POST">
+                    <form class="subscribe__form" action="/subscribe" method="POST" aria-label="register form">
                         <label class="form__lbl form-email">
                             <span> Email: *required</span>
                             <input name="email" type="text" class="form__email" placeholder="Please enter your email"/>
