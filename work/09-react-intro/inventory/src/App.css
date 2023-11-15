@@ -1,0 +1,30 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  background-color: burlywood;
+
+  border: 1px solid black;
+  border-radius: 0.5rem;
+
+  box-shadow: 0 0.5rem 0.5rem 0 rgba(40, 39, 39, 0.2);
+
+  padding: 2em;
+
+  min-width: 20em;
+}
+
+.card__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.btn {
+  background-color: papayawhip;
+  border: 1px solid black;
+}
