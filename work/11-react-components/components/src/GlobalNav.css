@@ -1,0 +1,46 @@
+.global-nav__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+
+.global-nav__btn{
+    border: none;
+    background-color: inherit;
+    padding: 0.5rem;
+}
+
+
+.global-nav__link{
+    padding: 0.5rem 0.5rem;
+}
+
+.global-nav__link:focus{
+    background-color: skyblue;
+}
+
+.global-nav__list--hidden{
+    display: none;
+}
+
+
+@media (min-width: 44rem){
+    .global-nav__list{
+        flex-direction: row;
+    }
+
+    .global-nav__list--hidden{
+        display: flex;
+    }
+
+    .global-nav__btn{
+        display: none;
+    }
+}
