@@ -1,0 +1,19 @@
+footer{
+    background-color: burlywood;
+    text-align: center;
+}
+
+.footer__list{
+    list-style: none;
+
+    padding: 0;
+    margin: 0.5rem;
+}
+
+@media (min-width: 44rem){
+    .footer__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

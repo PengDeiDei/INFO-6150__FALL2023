@@ -1,0 +1,44 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    align-items: center;
+
+    padding: 1rem;
+    margin: 0.5em;
+    
+    border: 1px solid black;
+    background-color: #eeeeee;
+}
+
+.card__img{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+}
+
+.card__title{
+    text-align: center;
+}
+
+.card__basicInfo{
+    text-align: center;
+}
+
+.card--close{
+    display: none;
+}
+
+@media(min-width: 44rem){
+    
+    .card{
+        border-radius: 1rem;
+        box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .card__img{
+        height: 250px;
+        width: 200px;
+    }
+}

@@ -1,0 +1,48 @@
+All images used in this project are from http://unsplash.com
+The original links of the used images are list below: 
+
+logo.jpg: 
+    https://unsplash.com/photos/man-in-white-t-shirt-sitting-beside-white-and-black-short-coated-dog-gWzTum_yMCg
+
+home-1.jpg:
+    https://unsplash.com/photos/black-pug-on-white-textile-qtkpOxCpl0Y
+
+home-2.jpg:
+    https://unsplash.com/photos/a-dog-and-a-cat-laying-in-the-grass-ouo1hbizWwo
+
+dog-1.jpg:
+    https://unsplash.com/photos/standing-brown-white-and-black-on-green-lawn-grass-ofgRowfw_TQ
+
+dog-2.jpg:
+    https://unsplash.com/photos/yellow-labrador-retriever-puppy-sitting-on-floor-WX4i1Jq_o0Y
+
+dog-3.jpg:
+    https://unsplash.com/photos/photo-of-black-and-white-siberian-husky-35FPKt3Yko4
+
+dog-4.jpg:
+    https://unsplash.com/photos/a-brown-dog-lying-on-the-ground-C3NJGZA5ybM
+
+dog-5.jpg:
+    https://unsplash.com/photos/black-and-white-short-coated-dog-on-black-metal-cage-yKN8C-KpgCQ
+
+dog-6.jpg:
+    https://unsplash.com/photos/brown-and-black-yorkshire-terrier-puppy-9WMoaz8kDrU
+
+cat-1.jpg:
+    https://unsplash.com/photos/black-and-white-cat-lying-on-brown-bamboo-chair-inside-room-gKXKBY-C-Dk
+
+cat-2.jpg:
+    https://unsplash.com/photos/orange-tabby-cat-on-yellow-surface-p6yH8VmGqxo
+
+cat-3.jpg:
+    https://unsplash.com/photos/white-and-brown-long-fur-cat-ZCHj_2lJP00
+
+cat-4.jpg:
+    https://unsplash.com/photos/white-cat-on-white-textile-BLW_KQ0Rkn0
+
+cat-5.jpg:
+    https://unsplash.com/photos/russian-blue-cat-on-white-table-7E9qvMOsZEM
+
+cat-6.jpg:
+    https://unsplash.com/photos/selective-focus-photo-of-gray-tabby-cat-IbPxGLgJiMI
+	

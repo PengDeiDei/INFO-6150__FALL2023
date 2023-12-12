@@ -1,0 +1,33 @@
+.cats{
+    display: flex;
+    flex-direction: column;
+}
+
+.cats__reminder{
+    background-color: #eeeeee;
+    border: 1px solid black;
+    padding: 0 0.5rem;
+    margin: 0 0.5rem;
+}
+
+@media (min-width: 44rem) {
+    .cats{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    .cats-filter{
+        grid-column: span 6;
+    }
+
+    .card-cats{
+        grid-column: span 2;
+    }
+
+    .cats__reminder{
+        grid-column: span 6;
+        border-radius: 0.5rem;
+
+        box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+}

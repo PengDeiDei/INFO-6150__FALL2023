@@ -1,0 +1,11 @@
+.app{
+    background-color: wheat;
+
+    margin: 0;
+    padding: 0;
+}
+
+.app.dark{
+
+    background-color: darkgray;
+}

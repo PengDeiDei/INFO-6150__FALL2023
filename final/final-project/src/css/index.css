@@ -1,0 +1,19 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  }
+
+  html,body{
+    font-family: sans-serif;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    font-size: 1rem;
+}
+
+#root {
+  height: 100%;
+}
