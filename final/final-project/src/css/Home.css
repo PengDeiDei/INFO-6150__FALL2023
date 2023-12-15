@@ -1,0 +1,51 @@
+.panel-home{
+    padding: 1rem;
+
+    border: 1px solid black;
+    
+    background-color: #eeeeee;
+
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.3);
+
+    overflow: hidden;
+}
+
+.panel-home__img{
+    height: 150px;
+    width: 200px;
+
+}
+
+.panel-home__img--about{
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.panel-home__img--adoption{
+    float: right;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.panel-home__img--service{
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.panel-home__title{
+    text-align: center;
+}
+
+@media(min-width: 44rem){
+    .panel-home{
+        border-radius: 0.5rem;
+        margin: 0.5em;
+    }
+
+    .panel-home__img{
+        height: 200px;
+        width: 250px;
+    }
+}

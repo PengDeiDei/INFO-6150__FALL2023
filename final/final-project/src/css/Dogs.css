@@ -1,0 +1,33 @@
+.dogs{
+    display: flex;
+    flex-direction: column;
+}
+
+.dogs__reminder{
+    background-color: #eeeeee;
+    border: 1px solid black;
+    padding: 0 0.5rem;
+    margin: 0 0.5rem;
+}
+
+@media (min-width: 44rem) {
+    .dogs{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    .dogs-filter{
+        grid-column: span 6;
+    }
+
+    .card-dogs{
+        grid-column: span 2;
+    }
+
+    .dogs__reminder{
+        grid-column: span 6;
+        border-radius: 0.5rem;
+
+        box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+}

@@ -1,0 +1,34 @@
+header{
+    display: grid;
+    grid-template-areas: 
+    "header-logo header-title"
+    "header-nav header-nav";
+
+    grid-template-columns: auto 1fr auto;
+
+    background-color: burlywood;
+}
+
+.header__logo{
+    grid-area: header-logo;
+    height: 150px;
+    width: 200px;
+}
+
+.header__title{
+    grid-area: header-title;
+    text-align: center;
+}
+
+.header__nav{
+    grid-area: header-nav;
+    background-color: papayawhip;
+}
+
+@media(mind-width: 44rem){
+    .header__logo{
+        grid-area: header-logo;
+        height: 200px;
+        width: 250px;
+    }    
+}
