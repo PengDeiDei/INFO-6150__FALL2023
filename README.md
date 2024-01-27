@@ -1,4 +1,4 @@
-# INFO6150 - UX Engineering
+# INFO6150-FALL_2023 - UX Engineering
 
 This repository is how you will receive and submit your assignments and projects.
 
@@ -12,6 +12,3 @@ Key parts:
 - [classes/](classes/) - Where class notes appear
 - [samples/](samples/) - This will appear when I have samples to offer. You should LEARN how these work rather than copying the files.
 - [project1/](project1/), [project2/](project2/), [final/](final/) - These will appear for the various projects and are where you get and submit those projects
-
-
-# INFO-6150__FALL2023
